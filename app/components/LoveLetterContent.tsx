@@ -61,19 +61,21 @@ export default function LoveLetterContent() {
         </motion.div>
       </Card>
 
-      <Card className="p-4 relative">
-        <Heart className="absolute -top-3 -right-3 rotate-12 w-10 h-10 text-purple-500 fill-purple-500" />
-        <Image
-          src="/us.jpg"
-          alt="Gabi"
-          width={300}
-          height={300}
-          className="rounded-md mb-2"
-        />
-        <span className="text-md text-center text-gray-500 block font-cormorantGaramond">
+      <div className="p-4 flex flex-col items-center justify-center">
+        <div className="relative w-fit">
+          <Image
+            src="/us.jpg"
+            alt="Gabi"
+            width={300}
+            height={300}
+            className="rounded-md shadow-lg"
+          />
+          <Heart className="absolute -top-4 -right-3 rotate-12 w-10 h-10 text-purple-500 fill-purple-500" />
+        </div>
+        <span className="text-md text-center text-gray-500 block font-cormorantGaramond mt-2">
           16 de octubre 2023
         </span>
-      </Card>
+      </div>
     </motion.div>
   );
 }
